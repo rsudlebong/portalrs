@@ -1,5 +1,4 @@
-# Atau: Mengedit file SIPAS
-nano src/modules/PatientReportModule.jsx// src/App.jsx
+// src/App.jsx
 import React, { useState, useEffect } from 'react';
 import { signInAnonymously, onAuthStateChanged } from 'firebase/auth';
 import { Activity, Users, Package, ShieldCheck, ArrowLeft, ChevronRight } from 'lucide-react';
