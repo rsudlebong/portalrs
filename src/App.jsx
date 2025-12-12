@@ -5,7 +5,6 @@ import { Activity, Users, Package, ShieldCheck, ArrowLeft, ChevronRight } from '
 // Import komponen modular
 import { ErrorBoundary } from './components/Commons';
 import PatientReportModule from './modules/PatientReportModule';
-import InventoryApp from './modules/InventoryApp'; // <-- INI YANG BARU
 import KmkpWebModule from './modules/KmkpWebModule';
 import { auth } from './firebase';
 
