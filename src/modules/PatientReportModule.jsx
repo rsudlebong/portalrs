@@ -155,7 +155,7 @@ const PatientReportModule = ({ user, onBack }) => {
          <div className="p-6 border-b border-slate-100 flex items-center justify-between md:justify-start space-x-3">
              <div className="flex items-center space-x-3">
                 <div className="p-2 bg-emerald-600 rounded-lg shadow-lg shadow-emerald-500/30"><Users className="w-6 h-6 text-white"/></div>
-                <span className="font-black text-slate-800 text-lg">PORTAL RSUD</span>
+                <span className="font-black text-slate-800 text-lg">SIPAS</span>
              </div>
              <button onClick={() => setIsMobileMenuOpen(false)} className="md:hidden text-slate-400"><X className="w-6 h-6"/></button>
          </div>
