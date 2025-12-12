@@ -6,6 +6,7 @@ import { Activity, Users, Package, ShieldCheck, ArrowLeft, ChevronRight } from '
 import { ErrorBoundary } from './components/Commons';
 import PatientReportModule from './modules/PatientReportModule';
 import KmkpWebModule from './modules/KmkpWebModule';
+import SimasWebModule from './modules/SimasWebModule'; // <-- MODUL SIMAS YANG BENAR
 import { auth } from './firebase';
 
 export default function App() {
@@ -31,8 +32,10 @@ export default function App() {
 
   return (
     <ErrorBoundary>
-      {/* TAMPILKAN APLIKASI INVENTORY BARU SAAT MENU SIMAS DIPILIH */}
-      {currentModule === 'simas' && <InventoryApp onBack={() => setCurrentModule('home')} />}
+      {/* LOGIKA RENDERING MODUL:
+        Menggunakan SimasWebModule, bukan InventoryApp, dan menghilangkan error build
+      */}
+      {currentModule === 'simas' && <SimasWebModule onBack={() => setCurrentModule('home')} />}
       
       {currentModule === 'patient' && <PatientReportModule user={user} onBack={() => setCurrentModule('home')} />}
       {currentModule === 'kmkp' && <KmkpWebModule onBack={() => setCurrentModule('home')} />}
